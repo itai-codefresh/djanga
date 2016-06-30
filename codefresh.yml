@@ -15,9 +15,7 @@ steps:
     description: It builds the Djanga Service
     dockerfile: Dockerfile
     image-name: noamt/djanga
-    #tag: nicetag
-    #build-arguments:
-    #  - FOO=BAR
+  
 
   push-dockerhub:
     type: push
