@@ -1,9 +1,6 @@
 version: '1.0'
 #re-adding comments
 steps:
-  #clone-prj:
-  #  type: git-clone
-  #  repo: https://github.com/nCodefresh/docker-spring-boot.git
   
   unit-test:
     image: python:2-alpine
@@ -12,16 +9,7 @@ steps:
     environment:
       - JIM=JIM
       - PORT=9000
-
-  # Not implemented yet
-  #integration-tests:
-  #  type: composition
-  #  image: alpine
-  #  working-directory: ${{clone-jim}}
-  #  composition-file: integ-test-composition.yml
-  #  commands:
-  #    - tests/exec.sh
-
+      
   build-djanga:
     type: build
     description: It builds the Djanga Service
