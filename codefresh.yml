@@ -22,4 +22,13 @@ steps:
     type: push
     candidate: ${{build-djanga}}
     tag: awesomeness
+    
+  oleg-crazy-step:
+    image: itaicodefresh/djanga
+    commands: 
+      - echo myimage
+      - exit 0
+    environment:
+      - JIM=JIM
+      - PORT=9000
 
