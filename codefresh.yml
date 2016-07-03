@@ -24,7 +24,7 @@ steps:
     tag: awesomeness
     
   oleg-crazy-step:
-    image: itaicodefresh/djanga
+    image: itaicodefresh/djanga:master
     commands: 
       - echo myimage
       - exit 0
